@@ -5,7 +5,7 @@ const config = require('./config');
 
 const app = express();
 
-mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(config.MONGO_URI)
     .then(() => {
         console.log('Connected to database');
     })
